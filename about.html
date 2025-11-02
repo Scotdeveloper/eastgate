@@ -1,0 +1,466 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Eastgate Assembly</title>
+  <link rel="icon" type="image/x-icon" href="kag favicon.png" />
+
+  <!-- SEO and Social Meta information -->
+    <meta name="description" content="Kenya Assemblies of God - Eastgate Assembly Nyeri. A house of worship, teaching, and spiritual growth where Everybody is Somebody." />
+    <meta name="keywords" content="KAG, Eastgate Assembly, Nyeri Church, Worship, Bishop Wachira, Margaret Karani, Youth Ministry, Fellowship" />
+    <meta name="author" content="Eastgate Assembly Nyeri" />
+
+    <!-- Open Graph Meta (Facebook, WhatsApp etc.) -->
+    <meta property="og:title" content="Eastgate Assembly - Nyeri" />
+    <meta property="og:description" content="Join us for worship, prayer, and spiritual growth. A place where Everybody is Somebody." />
+    <meta property="og:image" content="photo.jpg" />
+    <meta property="og:url" content="https://www.eastgateassembly.org" />
+    <meta property="og:type" content="website" />
+    
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/phosphor-icons"></script>
+
+  <style>
+    /* Smooth fade transition for tab content */
+    .tab-content {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      display: none;
+    }
+    .tab-content.active {
+      opacity: 1;
+      transform: translateY(0);
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header part of the webpage(remain unchanged in every page) -->
+  <header class="sticky top-0 z-50 bg-gradient-to-r from-orange-500 to-purple-700 text-white shadow-lg">
+    <div class="flex items-center justify-between px-6 py-4">
+      <div class="flex items-center space-x-3">
+        <img src="logo.png" alt="KAG Logo" class="h-14 w-14 object-contain hover:scale-110 transition" />
+        <span class="text-lg font-semibold tracking-wide">KENYA ASSEMBLIES OF GOD</span>
+      </div>
+      <nav class="hidden md:flex flex-1 justify-end space-x-8 font-medium text-sm">
+        <a href="index.html" class="hover:text-yellow-300 transition">Home</a>
+        <a href="service.html" class="hover:text-yellow-300 transition">Service</a>
+        <a href="about.html" class="text-yellow-300 font-semibold">About Us</a>
+        <a href="contact.html" class="hover:text-yellow-300 transition">Contact Us</a>
+        <a href="give.html" class="hover:text-yellow-300 transition">Give</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-white text-2xl">&#9776;</button>
+    </div>
+    <div id="mobile-menu" class="hidden flex-col md:hidden bg-gradient-to-r from-orange-500 to-purple-700 text-center py-2 space-y-2">
+      <a href="index.html" class="block hover:text-yellow-300">Home</a>
+      <a href="service.html" class="block hover:text-yellow-300">Service</a>
+      <a href="about.html" class="block text-yellow-300 font-semibold">About Us</a>
+      <a href="contact.html" class="block hover:text-yellow-300">Contact Us</a>
+      <a href="give.html" class="block hover:text-yellow-300">Give</a>
+    </div>
+  </header>
+
+  <!-- Hero section with a picture -->
+  <section class="relative bg-cover bg-center h-[60vh]" style="background-image: url('profile.jpg');">
+    <div class="absolute inset-0  bg-black/50"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down">About Us</h1>
+      <p class="italic max-w-2xl font-bold" data-aos="fade-up">
+        Know more about Who we are as The Kenya Assemblies of God - Eastgate Assembly Nyeri.
+      </p>
+    </div>
+  </section>
+
+  <!-- About description section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">About Eastgate Assembly Nyeri</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Eastgate Assembly-KAG is a House of Worship, Prayer, and experiencing the presence of God. It is located in Nyeri, Kenya, 
+        Opposite of New bus Station and is part of the Kenya Assemblies of God (KAG) denomination.<br>
+        Eastgate Assembly was founded in July 1996 by Bishop Dr. Wachira Karani and Pastor Margaret Wachira. The church faced many
+        opposition from the surrounding people but God sustained it through prayer and faith. 
+        Our church has grown from a small gathering to a vibrant community of believers dedicated to worship, teaching, and outreach.
+        We are committed to sharing the love of Christ with our community and beyond.
+        </p><br>
+        <p class="text-gray-700">
+          Our mission is to Worship God in Truth and Spirit and make disciples of all nations as per 
+          <i>John 14:6</i>, <i>Acts 4:12</i>, and <i>John 3:16</i>.
+        </p>
+      </div>
+      <div data-aos="fade-left" class="flex justify-center">
+       <div class="relative w-full max-w-4xl overflow-hidden rounded-2xl shadow-2xl">
+    <!-- Slides -->
+    <div id="slider" class="flex transition-transform duration-1000 ease-in-out">
+      <img src="image 1.jpg" class="w-full object-cover h-[500px] flex-shrink-0" alt="Slide 1">
+      <img src="image 2.jpg" class="w-full object-cover h-[500px] flex-shrink-0" alt="Slide 2">
+      <img src="image 3.jpg" class="w-full object-cover h-[500px] flex-shrink-0" alt="Slide 3">
+      <img src="image 4.jpg" class="w-full object-cover h-[500px] flex-shrink-0" alt="Slide 4">
+      <img src="image 5.jpg" class="w-full object-cover h-[500px] flex-shrink-0" alt="Slide 5">
+    </div>
+
+    <!-- Previous Button -->
+    <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full">
+      &#10094;
+    </button>
+
+    <!-- Next Button -->
+    <button id="next" class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full">
+      &#10095;
+    </button>
+
+    <!-- Dots Navigation -->
+    <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-3">
+      <span class="dot w-3 h-3 bg-white/60 rounded-full cursor-pointer" data-index="0"></span>
+      <span class="dot w-3 h-3 bg-white/30 rounded-full cursor-pointer" data-index="1"></span>
+      <span class="dot w-3 h-3 bg-white/30 rounded-full cursor-pointer" data-index="2"></span>
+      <span class="dot w-3 h-3 bg-white/30 rounded-full cursor-pointer" data-index="3"></span>
+      <span class="dot w-3 h-3 bg-white/30 rounded-full cursor-pointer" data-index="4"></span>
+      <span class="dot w-3 h-3 bg-white/30 rounded-full cursor-pointer" data-index="5"></span>
+    </div>
+  </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- interactive Tabs(mission,vision and core values) -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <div class="flex flex-wrap justify-center gap-4 mb-8" data-aos="fade-up">
+        <button class="info-tab px-6 py-2 rounded-lg bg-orange-600 hover:bg-blue text-white transition-all" data-target="vision">Our Vision</button>
+        <button class="info-tab px-6 py-2 rounded-lg bg-orange-600 hover:bg-blue transition-all" data-target="mission">Our Mission</button>
+        <button class="info-tab px-6 py-2 rounded-lg bg-orange-600 hover:bg-blue transition-all" data-target="values">Core Values</button>
+      </div>
+
+      <div id="vision" class="info-content tab-content active" data-aos="fade-up">
+        <h3 class="text-2xl font-bold mb-4 text-black">Our Vision</h3>
+        <p>To be a Christ-centered church that transforms lives and impacts communities for the glory of God.</p>
+      </div>
+
+      <div id="mission" class="info-content tab-content" data-aos="fade-up">
+        <h3 class="text-2xl font-bold mb-4 text-black">Our Mission</h3>
+        <p>To reach the lost, disciple believers, raise leaders, and impact society through the power of the Holy Spirit.</p>
+      </div>
+
+      <div id="values" class="info-content tab-content" data-aos="fade-up">
+        <h3 class="text-2xl font-bold mb-4 text-black">Our Core Values</h3>
+        <ul class="list-disc pl-6 space-y-2 text-left inline-block">
+          <li>Biblical Truth – Grounded in the Word of God</li>
+          <li>Prayer & Worship – Joyful, reverent, and Spirit-led</li>
+          <li>Authentic Relationships – Genuine love and care for one another</li>
+          <li>Excellence – Honoring God through our best efforts</li>
+          <li>Servanthood – Equipping believers to lead and serve</li>
+          <li>Innovation – Embracing creativity in ministry</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Tabs -->
+  <section class="max-w-4xl mx-auto px-4 mb-20" data-aos="fade-up">
+    <h2 class="text-center text-2xl font-bold mb-6">Our Services</h2>
+
+    <div class="flex flex-wrap justify-center gap-2 mb-6">
+      <button class="service-tab px-4 py-2 rounded-lg bg-orange-600 hover:bg-blue text-white transition-all" data-target="sunday">Sunday Service</button>
+      <button class="service-tab px-4 py-2 rounded-lg bg-orange-600 hover:bg-blue transition-all" data-target="youth">Youth Service</button>
+      <button class="service-tab px-4 py-2 rounded-lg bg-orange-600 hover:bg-blue transition-all" data-target="teen">Teens Service</button>
+      <button class="service-tab px-4 py-2 rounded-lg bg-orange-600 hover:bg-blue transition-all" data-target="kids">Kids Service</button>
+    </div>
+
+    <div id="sunday" class="service-content tab-content active bg-orange p-6 rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold mb-2 text-black">Sunday Service</h3>
+      <p class="mb-1"><strong>Time:</strong> 8:30 AM – 1:00 PM</p>
+      <p>Join us every Sunday for a powerful time of worship, prayer, and the Word. Experience an atmosphere of faith and fellowship as we grow together in Christ.</p>
+    </div>
+
+    <div id="youth" class="service-content tab-content bg-orange p-6 rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold mb-2 text-black">Youth Service</h3>
+      <p class="mb-1"><strong>Time:</strong> Sunday, 8:30 AM – 10:30 AM</p>
+      <p>Our Youth Service equips young believers to live boldly for Christ through engaging worship, teachings, and discussions that address real-life challenges.</p>
+    </div>
+
+    <div id="teen" class="service-content tab-content bg-orange p-6 rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold mb-2 text-black">Teens Service</h3>
+      <p class="mb-1"><strong>Time:</strong> Sunday, 8:00 AM – 10:30 AM</p>
+      <p>Teens connect in a fun and supportive environment that helps them build strong spiritual foundations and confidence in their faith journey.</p>
+    </div>
+
+    <div id="kids" class="service-content tab-content bg-orange p-6 rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold mb-2 text-black">Kids Service</h3>
+      <p class="mb-1"><strong>Time:</strong> Sunday, 8:30 AM – 10:30 AM</p>
+      <p>Our Kids Service provides a joyful space for children to learn about Jesus through interactive lessons, songs, and activities that inspire faith and love.</p>
+    </div>
+  </section>
+
+      <!-- Ministries at the easgate assembly -->
+  <section id="ministries" class="py-16 bg-gray-50" data-aos="fade-up">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Ministries & Programs</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-10">
+        Programs that disciple, equip and serve across all ages — children, youth, adults, community outreach, and support ministries.
+      </p>
+
+      <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="p-6 rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-bold text-lg mb-3">K</div>
+            <h3 class="font-semibold text-gray-900 text-lg mb-2">Kids Ministry</h3>
+            <p class="text-sm text-gray-600">
+              A safe, fun, and biblically-focused environment that helps children know and love Jesus.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center text-green-700 font-bold text-lg mb-3">Y</div>
+            <h3 class="font-semibold text-gray-900 text-lg mb-2">Youth Ministry</h3>
+            <p class="text-sm text-gray-600">
+              Equipping young believers through worship, mentorship, and leadership development.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-700 font-bold text-lg mb-3">G</div>
+            <h3 class="font-semibold text-gray-900 text-lg mb-2">Life Groups</h3>
+            <p class="text-sm text-gray-600">
+              Small weekly gatherings for prayer, fellowship, and mutual encouragement in the Word and life.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-red-100 flex items-center justify-center text-red-700 font-bold text-lg mb-3">O</div>
+            <h3 class="font-semibold text-gray-900 text-lg mb-2">Outreach</h3>
+            <p class="text-sm text-gray-600">
+              Reaching out to our community with compassion through social and spiritual support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- leadership of easgate assembly -->
+  <section id="team" class="py-16 bg-white" data-aos="fade-up">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Pastoral & Ministry Staff</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-10">
+        Our leadership team serves faithfully through teaching, caring, and equipping volunteers across all ministries.
+      </p>
+
+      <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        <div class="member bg-white rounded-xl p-3 shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+          <img src="Bishop Karani.jpeg" alt="Bishop Dr. Wachira Karani" class="w-full h-58 object-cover rounded-lg">
+          <h4 class="mt-3 font-semibold text-gray-900">Bishop Dr. Wachira Karani</h4>
+          <p class="text-sm text-gray-600">Founder / Senior Pastor</p>
+        </div>
+
+        <div class="member bg-white rounded-xl p-3 shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+          <img src="Pastor Margaret.jpeg" alt="Pastor Margaret Wachira" class="w-full h-58 object-cover rounded-lg">
+          <h4 class="mt-3 font-semibold text-gray-900">Pastor Margaret Wachira</h4>
+          <p class="text-sm text-gray-600">Associate Pastor</p>
+        </div>
+        
+        <div class="member bg-white rounded-xl p-3 shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+          <img src="Senior.jpeg" alt="Peter N.Kabara" class="w-full h-58 object-cover rounded-lg">
+          <h4 class="mt-3 font-semibold text-gray-900">Peter N.Kabara</h4>
+          <p class="text-sm text-gray-600">Senior Elder</p>
+        </div>
+
+        <div class="member bg-white rounded-xl p-3 shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+          <img src="Robert.jpeg" alt="Robert Gachie" class="w-full h-60 object-cover rounded-lg">
+          <h4 class="mt-3 font-semibold text-gray-900">Robert Gachie</h4>
+          <p class="text-sm text-gray-600">Church Elder || Mission Chair</p>
+        </div>
+
+        <div class="member bg-white rounded-xl p-3 shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+          <img src="Dan.jpeg" alt="Daniel Kung'u" class="w-full h-60 object-cover rounded-lg">
+          <h4 class="mt-3 font-semibold text-gray-900">Daniel Kung'u</h4>
+          <p class="text-sm text-gray-600">Church Elder || Projects Chair</p>
+        </div>
+
+        <div class="member bg-white rounded-xl p-3 shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+          <img src="Joshua.jpeg" alt="Joshua Kabugi" class="w-full h-60 object-cover rounded-lg">
+          <h4 class="mt-3 font-semibold text-gray-900">Joshua Kabugi</h4>
+          <p class="text-sm text-gray-600">Church Elder || Health</p>
+        </div>
+
+        <div class="member bg-white rounded-xl p-3 shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+          <img src="Mbatia.jpeg" alt="Johnson Mbatia" class="w-full h-60 object-cover rounded-lg">
+          <h4 class="mt-3 font-semibold text-gray-900">Johnson Mbatia</h4>
+          <p class="text-sm text-gray-600">Church Elder || Security Chair</p>
+        </div>
+
+        <div class="member bg-white rounded-xl p-3 shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+          <img src="Jamleck.jpg" alt="Jamleck Ruraya" class="w-full h-60 object-cover rounded-lg">
+          <h4 class="mt-3 font-semibold text-gray-900">Jamleck Ruraya</h4>
+          <p class="text-sm text-gray-600">Men's Ministry Leader</p>
+        </div>
+
+        <div class="member bg-white rounded-xl p-3 shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="400">
+          <img src="Wangai.jpg" alt="Milka Wangai" class="w-full h-58 object-cover rounded-lg">
+          <h4 class="mt-3 font-semibold text-gray-900">Milka Wangai</h4>
+          <p class="text-sm text-gray-600">Women's Ministry Leader(WWK)</p>
+        </div>
+
+        <div class="member bg-white rounded-xl p-3 shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="500">
+          <img src="Daniel.jpeg" alt="Daniel Gathinji" class="w-full h-58 object-cover rounded-lg">
+          <h4 class="mt-3 font-semibold text-gray-900">Daniel Gathinji</h4>
+          <p class="text-sm text-gray-600">Youth Ministry Leader</p>
+        </div>
+        <div class="member bg-white rounded-xl p-3 shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="500">
+          <img src="Francis.jpeg" alt="Francis Muturi" class="w-full h-58 object-cover rounded-lg">
+          <h4 class="mt-3 font-semibold text-gray-900">Francis Muturi</h4>
+          <p class="text-sm text-gray-600">Teens Ministry Leader</p>
+        </div>
+        <div class="member bg-white rounded-xl p-3 shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="500">
+          <img src="charles.jpg" alt="Charles Deritu" class="w-full h-58 object-cover rounded-lg">
+          <h4 class="mt-3 font-semibold text-gray-900">Charles Nderitu</h4>
+          <p class="text-sm text-gray-600">Kids Ministry Leader</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Invite section -->
+  <section id="invite" class="py-16 bg-gray-50 text-center" data-aos="fade-up">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">You're Invited</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
+        Whether you're exploring faith for the first time or looking for a home church, we warmly welcome you to Eastgate Assembly. 
+        Come experience worship, community, and growth with us.
+      </p>
+      <a href="contact.html" class="mt-4 inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-800 transition">
+        Contact Us
+      </a>
+    </div>
+  </section>
+
+     
+  <!-- Footer of the website(to be unchanged) -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="space-y-4">
+        <p class="text-gray-400">
+          Kenya Assemblies of God – Eastgate Assembly Nyeri.<br>
+          A church family where Everybody is Somebody.
+        </p>
+      </div>
+      <!--quick link to different pages-->
+      <div class="space-y-4">
+        <h4 class="text-xl font-semibold text-white">Quick Links</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+          <li><a href="service.html" class="hover:text-white transition">Services</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+        </ul>
+      </div>
+      <!--contact information part-->
+      <div class="space-y-4">
+        <h4 class="text-xl font-semibold text-white">Contact Us</h4>
+        <p class="text-gray-400 leading-relaxed">  
+          <i class="ph ph-map-pin text-red-500 font-bold"></i>Next to New Bus Station, Nyeri, Kenya<br><hr>
+          <i class="ph ph-phone text-red-500 font-bold"></i>Phone: +254 72276085 || +254 72282554<br><hr>
+          <i class="ph ph-envelope text-red-500 font-bold"></i>Email: info@eastgateassembly.org<br><hr>
+          <i class="ph ph-post text-red-500 font-bold"></i>P.O Box 12328-10100, Nyeri<hr>
+        </p>
+        <!--social media links-->
+        <div class="flex space-x-4 mt-4">
+          <a href="https://facebook.com/EasGateAssembly" target="_blank" class="text-blue-500 hover:text-blue-600 text-3xl transition"><i class="ph ph-facebook-logo"></i></a>
+          <a href="https://www.youtube.com/@eastgateassembly6020" target="_blank" class="text-red-500 hover:text-red-600 text-3xl transition"><i class="ph ph-youtube-logo"></i></a>
+          <a href="https://instagram.com/eastgate_assembly" target="_blank" class="text-pink-500 hover:text-pink-600 text-3xl transition"><i class="ph ph-instagram-logo"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800 text-center py-4 text-gray-500 text-sm">
+      &copy; <span id="year"></span> Eastgate Assembly — All Rights Reserved
+    </div>
+  </footer>
+
+  <!-- Scripts to improve the interactivity -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // mobile menu humberger
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // generic tab handler
+    function handleTabs(buttonSelector, contentSelector, activeColor) {
+      const buttons = document.querySelectorAll(buttonSelector);
+      const contents = document.querySelectorAll(contentSelector);
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove(activeColor, 'text-white'));
+          btn.classList.add(activeColor, 'text-white');
+          contents.forEach(c => c.classList.remove('active'));
+          document.getElementById(btn.dataset.target).classList.add('active');
+        });
+      });
+    }
+
+    handleTabs('.info-tab', '.info-content', 'bg-purple-700');
+    handleTabs('.service-tab', '.service-content', 'bg-blue-700');
+
+    const startYear = 2025;
+  const currentYear = new Date().getFullYear();
+
+  document.getElementById("year").textContent =
+    startYear === currentYear ? startYear : `${startYear}–${currentYear}`;
+
+    // Image Slider
+    const slider = document.getElementById('slider');
+    const slides = slider.children.length;
+    const dots = document.querySelectorAll('.dot');
+    let index = 0;
+
+    // Update slide position
+    function showSlide(i) {
+      index = (i + slides) % slides;
+      slider.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('bg-white/60', idx === index);
+        dot.classList.toggle('bg-white/30', idx !== index);
+      });
+    }
+
+    // Auto slide every 4 seconds
+    let autoSlide = setInterval(() => showSlide(index + 1), 4000);
+
+    // Buttons
+    document.getElementById('prev').onclick = () => {
+      clearInterval(autoSlide);
+      showSlide(index - 1);
+      autoSlide = setInterval(() => showSlide(index + 1), 4000);
+    };
+    document.getElementById('next').onclick = () => {
+      clearInterval(autoSlide);
+      showSlide(index + 1);
+      autoSlide = setInterval(() => showSlide(index + 1), 4000);
+    };
+
+    // Dots
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        clearInterval(autoSlide);
+        showSlide(parseInt(dot.dataset.index));
+        autoSlide = setInterval(() => showSlide(index + 1), 4000);
+      });
+    });
+  </script>
+</body>
+</html>

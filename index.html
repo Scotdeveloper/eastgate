@@ -1,0 +1,364 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eastgate Assembly</title>
+  <link rel="icon" type="image/x-icon" href="kag favicon.png" />
+
+  <!-- SEO and Social Meta information -->
+    <meta name="description" content="Kenya Assemblies of God - Eastgate Assembly Nyeri. A house of worship, teaching, and spiritual growth where Everybody is Somebody." />
+    <meta name="keywords" content="KAG, Eastgate Assembly, Nyeri Church, Worship, Bishop Wachira, Margaret Karani, Youth Ministry, Fellowship" />
+    <meta name="author" content="Eastgate Assembly Nyeri" />
+
+    <!-- Open Graph Meta (Facebook, WhatsApp etc.) -->
+    <meta property="og:title" content="Eastgate Assembly - Nyeri" />
+    <meta property="og:description" content="Join us for worship, prayer, and spiritual growth. A place where Everybody is Somebody." />
+    <meta property="og:image" content="photo.jpg" />
+    <meta property="og:url" content="https://www.eastgateassembly.org" />
+    <meta property="og:type" content="website" />
+    
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-200 text-gray-800">
+
+  <!-- Header part of the webpage -->
+  <header class="sticky top-0 z-50 bg-gradient-to-r from-orange-500 to-purple-700 text-white shadow-lg">
+    <div class="flex items-center justify-between px-6 py-4">
+      <div class="flex items-center space-x-3">
+        <img src="logo.png" alt="KAG Logo" class="h-14 w-14 object-contain hover:scale-110 transition" />
+        <span class="text-lg font-semibold tracking-wide">KENYA ASSEMBLIES OF GOD</span>
+      </div>
+      <nav class="hidden md:flex flex-1 justify-end space-x-8 font-medium text-sm">
+        <a href="index.html" class="font-bold hover:text-yellow-300 transition">Home</a>
+        <a href="service.html" class="font-bold hover:text-yellow-300 transition">Service</a>
+        <a href="about.html" class="font-bold hover:text-yellow-300 transition">About Us</a>
+        <a href="contact.html" class="font-bold hover:text-yellow-300 transition">Contact Us</a>
+        <a href="give.html" class="font-bold hover:text-yellow-300 transition">Give</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-white text-2xl">&#9776;</button>
+    </div>
+    <div id="mobile-menu" class="hidden flex-col md:hidden bg-gradient-to-r from-orange-500 to-purple-700 text-center py-2 space-y-2">
+      <a href="index.html" class="block hover:text-yellow-300">Home</a>
+      <a href="service.html" class="block hover:text-yellow-300">Service</a>
+      <a href="about.html" class="block hover:text-yellow-300">About Us</a>
+      <a href="contact.html" class="block hover:text-yellow-300">Contact Us</a>
+      <a href="give.html" class="block hover:text-yellow-300">Give</a>
+    </div>
+  </header>
+
+  <!-- Video Banner section -->
+  <section class="relative h-screen w-full overflow-hidden">
+    <video autoplay muted loop playsinline class="absolute inset-0 top-0 left-0 w-full h-full object-cover">
+      <source src="eastgateassembly.mp4" type="video/mp4">
+    </video>
+    <div class="absolute inset-0"></div>
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+      <h2 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg" data-aos="zoom-in">
+        Welcome to The EastGate Assembly Church Nyeri
+      </h2>
+      <p class="italic text-lg md:text-xl max-w-2xl leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+        “For I have chosen this Temple and sanctified it to be my Home forever; 
+        My eyes and Heart shall always be here” – 2 Chronicles 7:16
+      </p>
+      <p class="mt-6 text-lg md:text-xl max-w-2xl leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+        A place where Everybody is Somebody
+        </p>
+    </div>
+  </section>
+
+  <!-- A short description About eastgate assembly section -->
+  <section class="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-10 px-6 py-20">
+    <div class="lg:w-full text-gray-700 text-center lg:text-left space-y-6" data-aos="fade-right">
+      <p class="text-lg leading-relaxed">
+       Eastgate Assembly is a house of worship and prayer, a place to encounter the presence of God and find hope through sound biblical teaching delivered by Bishop Dr. Wachira Karani together with Pastor Margaret Wachira.
+         We are passionate about worship, spiritual growth, and compassionate outreach. Whether you are new to faith in Jesus Christ, seeking deeper spiritual growth, or looking for a church family where you can worship, pray, and be nurtured, Eastgate Assembly is a place to belong—a home where you are welcome.
+      </p>
+      <p class="text-lg">
+        At Eastgate Assembly, we are committed to sharing the love of Christ with our community and beyond. 
+        Whether you are new in the faith or have been walking with Christ for many years, there is a place for you here. We invite you to join us in worship, fellowship, and service as we grow together in faith and love. 
+        Come and experience genuine fellowship and the life-changing love of Christ. If you are searching for a place to belong, we welcome you with open arms—because at Eastgate Assembly, EVERYBODY IS SOMEBODY!
+      </p>
+    </div>
+  </section>
+
+  <!-- Ministry offered Cards -->
+  <section id="ministries" class="py-20 bg-gradient-to-b from-gray-100 to-gray-200">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800" data-aos="fade-up" data-aos="fade-down">
+        Our Ministries
+      </h2>
+
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Services of the eastgate assembly -->
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="100">
+          <i class="ph ph-church text-purple-600 text-5xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Services</h3>
+          <p class="text-gray-600 mb-4">
+             At Eastgate Assembly, we offer a variety of services designed to nurture your spiritual growth and strengthen our community. 
+             Join us for uplifting worship, engaging teaching, and meaningful fellowship.
+          </p>
+          <a href="service.html" class="inline-block px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-blue-600 transition">
+            Read More
+          </a>
+        </div>
+        <!-- About Us eastgate assembly card -->
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="200">
+          <i class="text-indigo-500 text-5xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">About Us</h3>
+          <p class="text-gray-600 mb-4">
+            Eastgate Assembly-KAG is a House of Worship, Prayer, and experiencing the presence of God. It is located in Nyeri, Kenya, 
+           Next to New bus Station and is part of the Kenya Assemblies of God (KAG) denomination.
+          </p><br>
+          <a href="about.html" class="inline-block px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-blue-600 transition">
+            Read More
+          </a>
+        </div>
+        <!-- Contact Us card section -->
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="300">
+          <i class="text-orange-500 text-5xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Contact Us</h3>
+          <p class="text-gray-600 mb-4">
+             We'd love to hear from you! Whether you have a question, need prayer, or simply want to connect, feel free to reach out to us through any of the channels below.
+          </p><br><br>
+          <a href="contact.html" class="inline-block px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-blue-600 transition">
+            Reach Out
+          </a>
+        </div>
+        <!-- Prayer Task Force card -->
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="400">
+          <i class="ph ph-hands-praying text-blue-600 text-5xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Prayer Task Force</h3>
+          <p class="text-gray-600 mb-4">
+           A dedicated time of intercession where believers gather to pray for the church, families, and the nation. Join us as we seek God’s guidance and breakthrough together.
+          </p><br>
+          <a href="service.html" class="inline-block px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-blue-600 transition">
+            Get Involved
+          </a>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="400">
+          <i class="ph ph-hands-praying text-blue-600 text-5xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Connect Groups</h3>
+          <p class="text-gray-600 mb-4">
+          Small fellowship gatherings within different neighborhoods, designed to help you grow in faith, build lasting friendships, and share life together in Christ.
+          </p>
+          <a href="connect.html" class="inline-block px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-blue-600 transition">
+            Get Involved
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+      
+  <!-- Watch Our Sermons Section- from youtube -->
+  <section class="bg-gray-200 py-16">
+    <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        Watch Our Sermons
+      </h2>
+      <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+        Stay connected with God’s Word through our latest messages.  
+        Be encouraged, inspired, and transformed by the Word of God.
+      </p>
+
+      <!-- Dynamic Sermons Grid -->
+      <div id="sermons-container" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3"></div>
+
+      <!-- Button -->
+      <div class="mt-12">
+        <a href="https://www.youtube.com/@eastgateassembly6020" target="_blank"
+           class="px-6 py-3 bg-orange-600 hover:bg-blue-600 text-black font-semibold rounded-lg shadow transition">
+          View More Sermons
+        </a>
+      </div>
+    </div>
+  </section>
+    
+    <!-- Watch our youtube Live Section -->
+<section class="bg-gray-200 py-16">
+  <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+      Watch Live
+    </h2>
+    
+    <!-- time we go live on youtube -->
+    <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+      Join us every <span class="font-semibold">Sunday at 10:00 AM (EAT)</span> 
+      for our live worship service streamed directly 
+      from Eastgate Assembly. Be part of the fellowship no matter where you are!
+    </p>
+
+    <!-- Watch Live Button redirect to youtube -->
+    <a href="https://www.youtube.com/@eastgateassembly6020/live" target="_blank"
+       class="px-6 py-3 bg-orange-600 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-lg transition data-aos="fade-down" data-aos="fade-up">
+      Watch Live on YouTube
+    </a>
+
+  </div>
+</section> 
+  <!-- Assistance section -->
+<section class="bg-gray-200 py-16">
+  <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+      Need Help?
+    </h2>
+    <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+      If you’re struggling, seeking spiritual guidance, or simply need someone to talk to, our ministry leaders are here for you. 
+      Reach out anytime — we’re here to walk alongside you in faith and fellowship.
+    </p>
+  </div>
+</section>
+
+  <!-- Footer of the website -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Brand -->
+      <div class="space-y-4">
+        <p class="text-gray-400">
+          Kenya Assemblies of God – Eastgate Assembly Nyeri.<br>
+          A church family where Everybody is Somebody.
+        </p>
+      </div>
+
+      <!-- Quick Links to different pages -->
+      <div class="space-y-4">
+        <h4 class="text-xl font-semibold text-white">Quick Links</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+          <li><a href="service.html" class="hover:text-white transition">Services</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="space-y-4">
+        <h4 class="text-xl font-semibold text-white">Contact Us</h4>
+        <p class="text-gray-400 leading-relaxed">  
+          <i class="ph ph-map-pin text-red-500 font-bold"></i>Next to New Bus Station, Nyeri, Kenya<br><hr>
+          <i class="ph ph-phone text-red-500 font-bold"></i>Phone: +254 72276085 || +254 72282554<br><hr>
+          <i class="ph ph-envelope text-red-500 font-bold"></i>Email: info@eastgateassembly.org<br><hr>
+          <i class="ph ph-post text-red-500 font-bold"></i>P.O Box 12328-10100, Nyeri<hr>
+        </p>
+        <!-- Social Media links -->
+        <div class="flex space-x-4 mt-4">
+          <a href="https://facebook.com/EasGateAssembly" target="_blank" 
+             class="text-blue-500 hover:text-blue-600 text-3xl transition">
+            <i class="ph ph-facebook-logo"></i>
+          </a>
+          <a href="https://www.youtube.com/@eastgateassembly6020" target="_blank" 
+             class="text-red-500 hover:text-red-600 text-3xl transition">
+            <i class="ph ph-youtube-logo"></i>
+          </a>
+          <a href="https://instagram.com/eastgate_assembly" target="_blank" 
+             class="text-pink-500 hover:text-pink-600 text-3xl transition">
+            <i class="ph ph-instagram-logo"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar and link to author -->
+    <div class="bg-gray-800">
+      <div class="container mx-auto px-6 py-4 text-center text-white text-sm">
+      <p>&copy;<span id="year"></span> Eastgate Assembly — All Rights Reserved</p>
+      <p class="mt-3 md:mt-0 text-right text-gray-400">
+        Powered by 
+        <a href="https://johnmwangi.vercel.app" target="_blank" rel="noopener noreferrer" 
+           class="text-yellow-400 hover:text-yellow-300 font-semibold transition">JOHN</a>
+      </p>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts to help fetch the data from youtube -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+   
+    
+    // YouTube Sermons Auto-Load
+    const API_KEY = "AIzaSyCdp5kap7gj1ryagy6Wb3cNLFvd7g1SGqY"; 
+    const CHANNEL_ID = "UCwiLokgcZ8ewPKLsyKZKMbA"; 
+    const MAX_RESULTS = 3;
+
+    async function loadSermons() {
+      const response = await fetch(
+        `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=${MAX_RESULTS}`
+      );
+      const data = await response.json();
+
+      let sermonsContainer = document.getElementById("sermons-container");
+      sermonsContainer.innerHTML = "";
+
+      data.items.forEach(item => {
+        if (item.id.videoId) {
+          let videoCard = `
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition" data-aos="fade-up">
+              <iframe class="w-full h-64" src="https://www.youtube.com/embed/${item.id.videoId}" 
+                frameborder="0" allowfullscreen></iframe>
+              <div class="p-4 text-left">
+                <h3 class="text-lg font-semibold text-gray-800">${item.snippet.title}</h3>
+                <p class="text-gray-500 text-sm">${item.snippet.publishedAt.substring(0,10)}</p>
+              </div>
+            </div>
+          `;
+          sermonsContainer.innerHTML += videoCard;
+        }
+      });
+    }
+
+    loadSermons();
+
+    (function () {
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      let open = false;
+
+      function openMenu() {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.remove('opacity-0', '-translate-y-2');
+        mobileMenu.classList.add('flex', 'opacity-100', 'translate-y-0');
+        menuBtn.innerHTML = '<i class="ph ph-x text-3xl"></i>';
+        menuBtn.setAttribute('aria-expanded', 'true');
+        open = true;
+      }
+
+      function closeMenu() {
+        mobileMenu.classList.remove('opacity-100', 'translate-y-0');
+        mobileMenu.classList.add('opacity-0', '-translate-y-2');
+        menuBtn.innerHTML = '<i class="ph ph-list text-3xl"></i>';
+        menuBtn.setAttribute('aria-expanded', 'false');
+        open = false;
+
+        const onEnd = () => {
+          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('flex');
+          mobileMenu.removeEventListener('transitionend', onEnd);
+        };
+        mobileMenu.addEventListener('transitionend', onEnd);
+      }
+
+      menuBtn.addEventListener('click', () => {
+        if (!open) openMenu(); else closeMenu();
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768 && open) {
+          closeMenu();
+        }
+      });
+    })();
+
+    
+    const startYear = 2025;
+  const currentYear = new Date().getFullYear();
+
+  document.getElementById("year").textContent =
+    startYear === currentYear ? startYear : `${startYear}–${currentYear}`;
+  </script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Eastgate Assembly</title>
+  <link rel="icon" type="image/x-icon" href="kag favicon.png" />
+
+  <!-- SEO and Social Meta information -->
+    <meta name="description" content="Kenya Assemblies of God - Eastgate Assembly Nyeri. A house of worship, teaching, and spiritual growth where Everybody is Somebody." />
+    <meta name="keywords" content="KAG, Eastgate Assembly, Nyeri Church, Worship, Bishop Wachira, Margaret Karani, Youth Ministry, Fellowship" />
+    <meta name="author" content="Eastgate Assembly Nyeri" />
+
+    <!-- Open Graph Meta (Facebook, WhatsApp etc.) -->
+    <meta property="og:title" content="Eastgate Assembly - Nyeri" />
+    <meta property="og:description" content="Join us for worship, prayer, and spiritual growth. A place where Everybody is Somebody." />
+    <meta property="og:image" content="photo.jpg" />
+    <meta property="og:url" content="https://www.eastgateassembly.org" />
+    <meta property="og:type" content="website" />
+    
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header part of the website (to be unchanged in each page) -->
+  <header class="sticky top-0 z-50 bg-gradient-to-r from-orange-500 to-purple-700 text-white shadow-lg">
+    <div class="flex items-center justify-between px-6 py-4">
+      <div class="flex items-center space-x-3">
+        <img src="logo.png" alt="KAG Logo" class="h-14 w-14 object-contain hover:scale-110 transition" />
+        <span class="text-lg font-semibold tracking-wide">KENYA ASSEMBLIES OF GOD</span>
+      </div>
+      <nav class="hidden md:flex flex-1 justify-end space-x-8 font-medium text-sm">
+        <a href="index.html" class="hover:text-yellow-300 transition">Home</a>
+        <a href="service.html" class="hover:text-yellow-300 transition">Service</a>
+        <a href="about.html" class="text-yellow-300 font-semibold">About Us</a>
+        <a href="contact.html" class="hover:text-yellow-300 transition">Contact Us</a>
+        <a href="give.html" class="hover:text-yellow-300 transition">Give</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-white text-2xl">&#9776;</button>
+    </div>
+    <div id="mobile-menu" class="hidden flex-col md:hidden bg-gradient-to-r from-orange-500 to-purple-700 text-center py-2 space-y-2">
+      <a href="index.html" class="block hover:text-yellow-300">Home</a>
+      <a href="service.html" class="block hover:text-yellow-300">Service</a>
+      <a href="about.html" class="block text-yellow-300 font-semibold">About Us</a>
+      <a href="contact.html" class="block hover:text-yellow-300">Contact Us</a>
+      <a href="give.html" class="block hover:text-yellow-300">Give</a>
+    </div>
+  </header>
+
+  <!-- Hero Section with picture in it -->
+    <section class="relative bg-cover bg-center h-[60vh]" style="background-image: url('profile.jpg');">
+    <div class="absolute inset-0  bg-black/50">
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down">Contact Us</h1>
+      <p class="italic max-w-2xl  font-bold" data-aos="fade-up">
+        We'd love to hear from you! Whether you have a question, need prayer, or simply want to connect, 
+      feel free to reach out to us through any of the channels below.
+      </p>
+    </div>
+    </div>
+  </section>
+  <section class="px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Left part: Contact Form -->
+      <div>
+        <form class="bg-gray-400 shadow-lg rounded-2xl p-8 w-full text-gray-800" data-aos="fade-right">
+          <h2 class="text-2xl font-bold text-center mb-6">Send Us a Message</h2>
+
+          <div class="mb-4">
+            <label class="block text-gray-700 font-medium mb-2" for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" 
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400" required>
+          </div>
+
+          <div class="mb-4">
+            <label class="block text-gray-700 font-medium mb-2" for="phone number">Phone Number</label>
+            <input type="phone number" id="phone number" name="phone number" placeholder="Enter your Phone number" 
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400" required>
+          </div>
+
+          <div class="mb-4">
+            <label class="block text-gray-700 font-medium mb-2" for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter subject" 
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400">
+          </div>
+
+          <div class="mb-4">
+            <label class="block text-gray-700 font-medium mb-2" for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here..."
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400" required></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" 
+              class="bg-blue-600 text-white px-6 py-2 rounded-xl shadow-lg hover:opacity-90 transition duration-200">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right: Single Contact Information card Card -->
+      <div class="bg-gray-400 text-gray-800 p-8 rounded-2xl shadow-lg space-y-6" data-aos="fade-left">
+        
+        <div>
+          <h3 class="text-xl font-bold mb-2">📍 Location</h3>
+          <p>Asian Quater, Next to new bus terminal</p>
+          <p>P.O Box 12328-10100 Nyeri, Kenya</p>
+        </div>
+        
+        <hr class="border-white/40">
+
+        <div>
+          <h3 class="text-xl font-bold mb-2">📧 Email</h3>
+          <p>eastgateassembly@gmail.com</p>
+          <p>wachirakarani@yahoo.co.uk</p>
+        </div>
+        
+        <hr class="border-white/40">
+
+        <div>
+          <h3 class="text-xl font-bold mb-2">📞 Phone / WhatsApp</h3>
+          <p>+254 7722 769 085 – Bishop Wachira Karani</p>
+          <p>+254 7722 892 554 – Pastor Margaret Karani</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Map Section -->
+  <section class="px-6 pb-12">
+    <div class="bg-gray-400 text-gray-800 p-8 rounded-2xl shadow-lg" data-aos="fade-up">
+      <h2 class="text-2xl font-bold text-center mb-6">Find Us Here</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7050457473965!2d36.95997857417844!3d-0.43174603528751054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182861bff3e48e15%3A0x90f348202960545d!2sEASTGATE%20ASSEMBLY%2C%20NYERI!5e0!3m2!1sen!2ske!4v1762011919293!5m2!1sen!2ske"
+      width="100%" height="450" style="border:0;"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      </div>
+      </div>
+      </section>
+
+  <!-- Footer of the website (remain unchanged in each page) -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="space-y-4">
+        <p class="text-gray-400">
+          Kenya Assemblies of God – Eastgate Assembly Nyeri.<br>
+          A church family where Everybody is Somebody.
+        </p>
+      </div>
+      <!--quick links to different pages-->
+      <div class="space-y-4">
+        <h4 class="text-xl font-semibold text-white">Quick Links</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+          <li><a href="service.html" class="hover:text-white transition">Services</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+        </ul>
+      </div>
+      <!--contact information-->
+      <div class="space-y-4">
+        <h4 class="text-xl font-semibold text-white">Contact Us</h4>
+        <p class="text-gray-400 leading-relaxed">  
+          <i class="ph ph-map-pin text-red-500 font-bold"></i>Next to New Bus Station, Nyeri, Kenya<br><hr>
+          <i class="ph ph-phone text-red-500 font-bold"></i>Phone: +254 72276085 || +254 72282554<br><hr>
+          <i class="ph ph-envelope text-red-500 font-bold"></i>Email: info@eastgateassembly.org<br><hr>
+          <i class="ph ph-post text-red-500 font-bold"></i>P.O Box 12328-10100, Nyeri<hr>
+        </p>
+        <!-- Social Media links -->
+        <div class="flex space-x-4 mt-4">
+          <a href="https://facebook.com/EasGateAssembly" target="_blank" 
+             class="text-blue-500 hover:text-blue-600 text-3xl transition">
+            <i class="ph ph-facebook-logo"></i>
+          </a>
+          <a href="https://www.youtube.com/@eastgateassembly6020" target="_blank" 
+             class="text-red-500 hover:text-red-600 text-3xl transition">
+            <i class="ph ph-youtube-logo"></i>
+          </a>
+          <a href="https://instagram.com/eastgate_assembly" target="_blank" 
+             class="text-pink-500 hover:text-pink-600 text-3xl transition">
+            <i class="ph ph-instagram-logo"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800">
+      <div class="container mx-auto px-6 py-4 text-center text-gray-500 text-sm">
+        &copy; 2025 Eastgate Assembly — All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    (function () {
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      let open = false;
+
+      function openMenu() {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.remove('opacity-0', '-translate-y-2');
+        mobileMenu.classList.add('flex', 'opacity-100', 'translate-y-0');
+        menuBtn.innerHTML = '<i class="ph ph-x text-3xl"></i>';
+        menuBtn.setAttribute('aria-expanded', 'true');
+        open = true;
+      }
+
+      function closeMenu() {
+        mobileMenu.classList.remove('opacity-100', 'translate-y-0');
+        mobileMenu.classList.add('opacity-0', '-translate-y-2');
+        menuBtn.innerHTML = '<i class="ph ph-list text-3xl"></i>';
+        menuBtn.setAttribute('aria-expanded', 'false');
+        open = false;
+
+        const onEnd = () => {
+          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('flex');
+          mobileMenu.removeEventListener('transitionend', onEnd);
+        };
+        mobileMenu.addEventListener('transitionend', onEnd);
+      }
+
+      menuBtn.addEventListener('click', () => {
+        if (!open) openMenu(); else closeMenu();
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768 && open) {
+          closeMenu();
+        }
+      });
+    })();
+    const startYear = 2025;
+  const currentYear = new Date().getFullYear();
+
+  document.getElementById("year").textContent =
+    startYear === currentYear ? startYear : `${startYear}–${currentYear}`;
+  </script>
+</body>
+</html>
